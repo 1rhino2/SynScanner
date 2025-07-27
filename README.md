@@ -7,7 +7,7 @@ This is a super-fast, multi-threaded SYN port scanner I wrote in C++. It fires S
 - SYN scan style (like nmap -sS)
 - Decoy IPs to mess with anyone watching (So you can't be easily traced)
 - Optional IP fragmentation (for those pesky firewalls)
-- Tweak threads, decoys, and packets-per-second (PPS)
+- change threads, decoys, and packets-per-second (PPS)
 - Tells you if a port is OPEN, CLOSED, FILTERED, or just not talking (UNK/NO RESPONSE)
 
 ## How Do I Use It?
