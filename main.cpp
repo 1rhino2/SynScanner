@@ -1,12 +1,12 @@
 // SYN Port Scanner
 // This is a multi-threaded SYN port scanner. It uses raw sockets to blast SYNs and see what answers.
-#include <iostream>          // For printing stuff
+#include <iostream>          // For printing things
 #include <vector>            // Vectors are just dynamic arrays
-#include <thread>            // Threads, so it's not super slow
+#include <thread>            // Threads, so it's not  slow
 #include <atomic>            // For safe counters between threads
 #include <chrono>            // Timing and sleeping
 #include <mutex>             // Locking so output isn't a mess
-#include <csignal>           // Catch Ctrl+C so you can bail out
+#include <csignal>           // Catch Ctrl+C so you can exit the program
 #include <cstring>           // For memset, memcpy, etc.
 #include <cstdlib>           // atoi, rand, etc.
 #include <unistd.h>          // For close(), usleep(), etc.
@@ -24,7 +24,7 @@
 #include <algorithm>         // For shuffling
 
 #define MAX_PORTS 65536 // All the ports (1-65535)
-#define MAX_THREADS 256 // Don't go too wild with threads
+#define MAX_THREADS 256 // Don't go too far with threads
 #define MAX_DECOYS 8    // Max decoy IPs you can use
 
 // What happened to a port after we scanned it
